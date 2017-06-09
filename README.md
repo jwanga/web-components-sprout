@@ -1,5 +1,4 @@
-# Web Dashboard
-
+# Web Component Sprout
 A seed project for a framework less web application using web-components.
 
 The goal of this project is to prove that one can build a modern web application without a framework by
