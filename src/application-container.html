@@ -1,0 +1,33 @@
+<template>
+    <style>
+      :host {
+        display: inline-block;
+      }
+    </style>
+    <div>
+      dshjsdssddsfsd-
+      <slot></slot>
+    </div>
+  </template>
+  <script>
+
+    class ApplicationContainer extends HTMLElement {
+      static get is() {
+        return "application-container";
+      }
+
+      constructor() {
+        super();
+         console.log('foo')
+        this.shadow = this.attachShadow({mode: 'open'});
+        this.template = document.currentScript.ownerDocument.querySelector('template');
+      }
+
+      connectedCallback() {
+        this.shadow.appendChild(document.importNode(this.template.content, true));
+      }
+    }
+
+    customElements.define(ApplicationContainer.is, ApplicationContainer);
+
+  </script>

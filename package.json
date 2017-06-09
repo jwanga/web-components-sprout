@@ -1,0 +1,24 @@
+{
+  "name": "thepattern-web-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepatterninc/thepattern-web-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thepatterninc/thepattern-web-dashboard/issues"
+  },
+  "homepage": "https://github.com/thepatterninc/thepattern-web-dashboard#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "webpack": "^2.6.1"
+  }
+}
